@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Lora&display=swap');
 
 html{
-	font-family: 'Merriweather', serif;
 	font-size: 62.5%;
 
 	}
@@ -19,136 +19,97 @@ a{
 
 ul {
 	list-style: none;
+	margin: auto;
+}
+
+header{
+	background: linear-gradient(60deg, orange,lightyellow);
+
 }
 
 body{
-	background: linear-gradient(60deg, orange,lightyellow);
+	background-color: #fff;
+}
+
+figcaption{
+	color: #147989 ;
 }
 
 /* -------- Referencia de colores ---------- 
 
-.Mad-Women-1-rgba { color: rgba(127, 126, 119, 1); }
-.Mad-Women-2-rgba { color: rgba(130, 18, 44, 1); }
-.Mad-Women-3-rgba { color: rgba(255, 249, 212, 1); }
-.Mad-Women-4-rgba { color: rgba(130, 126, 102, 1); }*/
-.bg-petrol { background: rgba(136, 160, 155, 1); }
-
-
-.background{
-	background-image: repeat;
-}
+color: rgba(127, 126, 119, 1); }
+color: rgba(130, 18, 44, 1); }
+color: rgba(255, 249, 212, 1); }
+color: rgba(130, 126, 102, 1); }
+color: #147989*/
 
 
 /*--------- Propiedades de Navs --------- */
 
-nav ul li a:hover{
-	color: rgba(130, 18, 44, 1);
-	font-size: 2.1rem;
-}
-
-
-
 nav ul li{
 	display: inline-block;
-	margin-right: 40px;
+	margin-right: 40px;*/
 	}
-
-.nav_principal {
-	display: flex;
-	justify-content: center;
-	height: auto;
-	padding: 10px;
-	background: rgba(136, 160, 155, 1);
-	
-}
-
-
-.center{
-	justify-content: center;
-	justify-items: center;
-}
 
 .nav_principal--text{
-	color: rgba(255, 249, 212, 1);
-	font-family: 'Merriweather', serif;
-	font-size: 1.8rem;
+	font-family: 'Lato', sans-serif;
+	font-size: 2.2rem;
+	font-weight: 800;
 
 }
-
-
-.div_login_donate{
-	display: flex;
-	justify-content:space-evenly;
-	/*padding: 140px;*/*/
-	text-align: center;
-	align-items: center;
-	margin: 20px;
-
-	}
-
 
 .nav_login_donate--text{
 	color: rgba(130, 18, 44, 1);
 	font-size: 1.7rem;
-	font-family: 'Merriweather', serif;
+	font-family: 'Lato', sans-serif;
+	font-weight: bold;
 
 }
-
-/*--------- Animacion en link "Queres donar?" ---------*/
-
-#scale:hover{ 
-	transform: scale(1.5, 1.5);
-	transition: 0.5s;
-	cursor: pointer;
-	color: grey;
-	}
-
-
-
 
 /*---------Propiedades de textos--------*/
 
 .titulo_principal--l{
-	font-size: 3rem;
+	font-size: 3.5rem;
 	font-style: bold;
 	margin: 15px;
-	font-family: 'Merriweather', serif;
+	font-family: 'Lato', sans-serif;
 
-}
-
-.text-align--center{
-	text-align: center;
-}
-
-.text-align--justify{
-	text-align: justify;
 }
 
 .titulo_intermedio--m{
 	font-size: 2rem;
-	margin: 15px;
-	Font-family: 'Merriweather', serif;
+	font-style: bold;
+	font-family: 'Lato', sans-serif;
 
+}
+
+.titulo_section_pages{
+	font-family: 'Merriweather', serif;
+	font-size: 2.5rem;
+
+}
+
+.titulo_section--m{
+	font-size: 1.5rem;
+	font-family: 'Lato', sans-serif;
 }
 
 .titulos_forms{
 	font-size: 2rem;
-	color: rgba(136, 160, 155, 1);
-	ont-family: 'Merriweather', serif;
+	color: #147989;
+	font-family: 'Lato', sans-serif;
 
-}
-
-.titulo_intermedio--border{
-	border-bottom: grey 1px dotted;
 }
 
 .parrafos{
-	font-size: 1.5rem;
-	line-height: 25px;
-	font-family: 'Merriweather', serif;
-
+	font-size: 2rem;
+	line-height: 35px;
+	font-family: 'Lato', sans-serif;
 }
 
+.paginas p.parrafos{
+	margin: 20px;
+}
 /*-------- Propiedades de imagenes en index.html ---------*/
 
 .imagen_principal{
@@ -165,31 +126,18 @@ nav ul li{
 	width: 100%;
 }
 
-.div_section{
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-	align-items: center;
-	width: 100%;
-	margin-top: 30px;
 
-}
-
-.div_contenedor div{
-	margin:30px 
-}
 
 .logo-iconosize{
 	width: 250px;
 }
 
-.carousel {
+.carousel{
   display: flex;
   width: 80%;
   align-content: center;
   align-items: center;
-  margin: auto
-
+  margin: auto;
 }
 
 .align-items{
@@ -203,28 +151,25 @@ nav ul li{
 
 .div_involucrarse_contenedor{
 	display: flex;
-	align-items: center;
 	flex-direction: row;
 	position: relative;
 	width: 100%;
-	background-repeat: repeat;
-	background-position: center;
-	background-size: auto;
-	background-color: #f5BD47;
 	justify-content: space-evenly;
 	margin-top: 50px;
+	margin-bottom: 50px;
+	background-color: #f5BD47 ;
 }
+
 .div_involucrarse{
 	width: 100%;
 	display: flex;
-	/*align-items: center;*/
 	align-content: center;
 	flex-wrap: wrap;
-	background-color: #f5BD47 ;
 	font-size: 1.2rem;
 	font-family: 'Merriweather', serif;
 	padding: 45px;
 	justify-content: center;
+
 
 	}
 
@@ -234,12 +179,8 @@ nav ul li{
 	font-family: 'Merriweather', serif;
 	font-size: 1rem;
 	margin-top: 20px;
-
 	}
 
-	.img_involucrarse{
-		width: 100%;
-	}
 
 .img_inv1{
 	animation: slide-in1 4000ms;
@@ -280,81 +221,139 @@ nav ul li{
 
   @keyframes slide-in3{
     from {
-      transform: translateX(-310%);
+      transform: translateX(-100%);
     }
     to {
       transform: translateX(0%);
     }
   }
 
+/* ----------- Media query 768px --------------*/
+
+@media only screen and (max-width: 768px) {
+  .div_involucrarse_contenedor{
+  display: flex;
+  flex-wrap: wrap;
+
+  }
+
+iframe{
+ 	width: 50%;
+ }
+}
+
+/* ----------- Media query 1366px --------------*/
+
+@media only screen and (max-width: 1366px) {
+
+	.div_involucrarse_contenedor{
+	display: flex;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	flex-direction: row;
+	width: 100%;
+	justify-content: space-evenly;
+	margin-top: 50px;
+	margin-bottom: 50px;
+
+	}
+
+  .div_involucrarse{
+	width: 65%;
+	height: auto;
+	display: flex;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	background-color: #f5BD47 ;
+	font-size: 1.2rem;
+	font-family: 'Merriweather', serif;
+	padding: 45px;
+	justify-content: center;
+
+	}
+
+  }
+
+
 
 /* ------Propiedades de pagina Causas ---------- */
-
-.imagen_causas{
-	width: 50%;
-	display: flex;
-}
-
-.icono_causas{
-	display: inline-block;
-	margin: 35px 100px 50px 250px;
-}
-
-.h1_causas{
-	display: inline-block;
-	margin: 200px 0px 130px -250px;
-}
 
 .causas_igualdad{
 	width: 50%
 }
-	
 
-
-.mapa_parrafos-sm{
-	font-size:1.5rem
-
+.icono_causas{
+	width: 30%;
+	margin-bottom: 10px;
 }
 
-.parrafos_causas{
-	font-size: 1.3rem;
-	line-height: 25px;
-	width: 40%;
-	margin-left: 20px;
-
-}    
 
 .div_contenedor_causas{
 	display: flex;
-	justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-top: 10px;
+	padding: 30px;
+	justify-content: space-around;
 	align-items: center;
-	margin:50px 60px 50px 60px 
+	background-color: #fff;
+	animation: causas 5s infinite;
+}
+
+/* ANIMACION BACKGROUND SECTION CAUSAS */
+
+@keyframes causas {
+  from {background-color: #fff;}
+  to {background-color: lightgoldenrodyellow;}
+}
+
+div figure p{
+	font-size: 1.5rem;
+	font-family: 'Lato', sans-serif;
+	padding: 15px;
+}
+
+.div_grid_causas{
+	padding: 30px;
+	margin-bottom: 10px;
 
 }
+
+/* ------ Propiedades de pagina Nuestros Programas ----- */
+
+.div_contenedor_programas{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-top: 10px;
+	padding: 30px;
+	justify-content: space-around;
+	align-items: center;
+	background-color: lightgoldenrodyellow;
+	text-align: center;
+
+}
+
+
+.icono_programas{
+	width: 25%;
+	margin-bottom: 10px;
+	}
 
 /*--------- Propiedades de pagina Nosotros ---------*/
 /*--------------- GRID + Media query ---------------*/
 
-
-
-
-.imagen_nosotros--sm{
-	width: 100%;
-	
-}
-
-
-.imagen_nosotros--l{
-	width: 70%;
-}
-
 .div_contenedor_nosotros{
 	display: flex;
-	padding:  10px;
-	margin: 5px auto;
-	justify-content: center;
+	padding: 30px;
+	margin: auto;
+	justify-content: space-around;
 	align-items: center;
 	flex-flow: wrap;
+	align-content: center;
 
 }
 	
@@ -364,21 +363,30 @@ nav ul li{
 
 }
 
-.main_div{
+.div_icono_h1{
 	display: flex;
-	
+	flex-direction: column;
+	align-items: center;
 }
 
+.icono_nosotros{
+	width: 50%;
+	margin-bottom: 10px;
+}
+
+.main_div{
+	display: flex;	
+}
 
 .parrafos_nosotros{
 	font-size: 1.3rem;
 	line-height: 25px;
+	font-family: 'Lato', sans-serif;
 
 }
 
 
 .contenedor{
-	padding: 10px;
 	display: grid;
 	grid-gap: 10px;
 	grid-template-columns: repeat(3, 1fr);
@@ -389,13 +397,10 @@ nav ul li{
 	"main main aside"
 	"main main aside"
 	"footer footer footer";
-	
-
 }
 
 .contenedor > div,
-.contenedor .section,
-.contenedor .main,
+.contenedor .section div,
 .contenedor .aside{
 	background-color: lightgoldenrodyellow;
 	border-radius: 4px;
@@ -420,8 +425,8 @@ nav ul li{
 }
 
 .div_50{
-	width: 45%;
-	padding: 16px;
+	width: 50%;
+	padding: 5px;
 
 
 }
@@ -460,15 +465,6 @@ nav ul li{
 		width: 100%;
 	}
 
-	.navv{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	background: rgba(136, 160, 155, 1);
-	
-}
-
 }
 
 /* ----------- Media query 320px --------------*/
@@ -494,10 +490,39 @@ header{
 }
 
 
+/* ---- Propiedades pagina Novedades y Eventos -------- */
+
+.icono_novedades{
+	margin-bottom: 10px;
+}
+
+@keyframes vibrate {
+  0% { transform: rotate(0deg); }
+  10% { transform: rotate(-1deg); }
+  20% { transform: rotate(1deg); }
+  30% { transform: rotate(0deg); }
+  40% { transform: rotate(1deg); }
+  50% { transform: rotate(-1deg); }
+  60% { transform: rotate(0deg); }
+  70% { transform: rotate(-1deg); }
+  80% { transform: rotate(1deg); }
+  90% { transform: rotate(0deg); }
+  100% { transform: rotate(-1deg); }
+}
+
+.img_novs:hover {
+  /* Start the vibrate animation with duration 0.5 seconds */
+  animation: vibrate 0.5s;
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+
 /*--------- Propiedades de Formularios ---------*/
 
 
 .div_forms{
+	height: 50vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -519,6 +544,15 @@ header{
 	width: 50%;
 }
 
+.button {
+  transition-duration: 0.4s;
+}
+
+.button:hover {
+  background-color: #147989; 
+  color: white;
+}
+
 /*-------- Propiedades de footer --------- */
 
 .pie{
@@ -534,7 +568,7 @@ header{
 }
 
 .pie_background{
-	background-color:rgba(136, 160, 155,1);
+	background-color: #147989;
 }
 		
 .pie_align{
