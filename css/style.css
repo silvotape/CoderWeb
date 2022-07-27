@@ -1,7 +1,9 @@
+/*YA LO PASE A SCCS*/
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Lora&display=swap');
 
+/*YA LO PASE A SCCS*/
 html{
 	font-size: 62.5%;
 
@@ -23,7 +25,7 @@ ul {
 }
 
 header{
-	background: linear-gradient(60deg, orange,lightyellow);
+	background: linear-gradient(60deg,#f6ac23,rgba(255, 249, 212, 1));
 
 }
 
@@ -35,22 +37,15 @@ figcaption{
 	color: #147989 ;
 }
 
-/* -------- Referencia de colores ---------- 
-
-color: rgba(127, 126, 119, 1); }
-color: rgba(130, 18, 44, 1); }
-color: rgba(255, 249, 212, 1); }
-color: rgba(130, 126, 102, 1); }
-color: #147989*/
-
-
 /*--------- Propiedades de Navs --------- */
 
+/*YA LO PASE A SCCS*/
 nav ul li{
 	display: inline-block;
 	margin-right: 40px;*/
 	}
 
+/*YA LO PASE A SCCS*/
 .nav_principal--text{
 	font-family: 'Lato', sans-serif;
 	font-size: 2.2rem;
@@ -58,6 +53,7 @@ nav ul li{
 
 }
 
+/*YA LO PASE A SCCS*/
 .nav_login_donate--text{
 	color: rgba(130, 18, 44, 1);
 	font-size: 1.7rem;
@@ -67,6 +63,8 @@ nav ul li{
 }
 
 /*---------Propiedades de textos--------*/
+
+/*YA LO PASE A SCCS TODOS LOS TEXTOS*/
 
 .titulo_principal--l{
 	font-size: 3.5rem;
@@ -110,8 +108,10 @@ nav ul li{
 .paginas p.parrafos{
 	margin: 20px;
 }
+
 /*-------- Propiedades de imagenes en index.html ---------*/
 
+/*YA LO PASE A SCCS*/
 .imagen_principal{
   display: flex;
   margin: 20px;
@@ -140,15 +140,16 @@ nav ul li{
   margin: auto;
 }
 
+/*--------NO!! LO PASE A SCCS-------*/
 .align-items{
 	align-items: center;
 }
-
 
 .overflow{
 	overflow: hidden;
 }
 
+/*YA LO PASE A SCCS*/
 .div_involucrarse_contenedor{
 	display: flex;
 	flex-direction: row;
@@ -169,10 +170,9 @@ nav ul li{
 	font-family: 'Merriweather', serif;
 	padding: 45px;
 	justify-content: center;
-
-
 	}
 
+/*YA LO PASE A SCCS*/
 .btn_involucrarse{
 	background-color: turquoise;
 	border-radius: 5px;
@@ -181,7 +181,7 @@ nav ul li{
 	margin-top: 20px;
 	}
 
-
+/*YA LO PASE A SCCS*/
 .img_inv1{
 	animation: slide-in1 4000ms;
 	cursor: pointer;
@@ -196,10 +196,9 @@ nav ul li{
 .img_inv3{
 	animation: slide-in3 2000ms;
 	cursor: pointer;
-
 	}
 
-/* --- ANIMACIONES ----- */
+/* --- YA LO PASE A SCSS ----- */
 
 @keyframes slide-in1 {
     from {
@@ -228,6 +227,7 @@ nav ul li{
     }
   }
 
+/*YA LO PASE A SCCS*/
 /* ----------- Media query 768px --------------*/
 
 @media only screen and (max-width: 768px) {
@@ -242,6 +242,7 @@ iframe{
  }
 }
 
+/*YA LO PASE A SCCS*/
 /* ----------- Media query 1366px --------------*/
 
 @media only screen and (max-width: 1366px) {
@@ -277,13 +278,8 @@ iframe{
 
   }
 
-
-
+/* ------ NO!!! LO PASE A SCCS ---------*/
 /* ------Propiedades de pagina Causas ---------- */
-
-.causas_igualdad{
-	width: 50%
-}
 
 .icono_causas{
 	width: 30%;
@@ -303,11 +299,13 @@ iframe{
 	animation: causas 5s infinite;
 }
 
+
+/*YA LO PASE A SCCS*/
 /* ANIMACION BACKGROUND SECTION CAUSAS */
 
 @keyframes causas {
   from {background-color: #fff;}
-  to {background-color: lightgoldenrodyellow;}
+  to {background-color: #ffffe0;}
 }
 
 div figure p{
@@ -332,7 +330,7 @@ div figure p{
 	padding: 30px;
 	justify-content: space-around;
 	align-items: center;
-	background-color: lightgoldenrodyellow;
+	background-color: #ffffe0;
 	text-align: center;
 
 }
@@ -560,6 +558,7 @@ header{
 	align-items: center;
 	display: flex;
 	justify-content: center;
+	color: #fff;
 	
 }
 
@@ -574,3 +573,7 @@ header{
 .pie_align{
 	text-align: center;
 }			
+
+.pie_icon--m{
+	width: 42px;
+}

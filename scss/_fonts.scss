@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Lora&display=swap');
+
+$fontMain: 'Lato', sans-serif;
+$fontSec: 'Merriweather', serif;
+
+.nav_principal--text{
+	font-family: $fontMain;
+	font-size: 2.2rem;
+	font-weight: 800;
+
+}
+
+.nav_login_donate--text{
+	color: $bordeau;
+	font-size: 1.7rem;
+	font-family: $fontMain;
+	font-weight: bold;
+
+}
+
+.titulo_principal--l{
+	font-size: 3.5rem;
+	font-style: bold;
+	margin: 15px;
+	font-family: $fontMain;
+
+}
+
+.titulo_intermedio--m{
+	font-size: 2rem;
+	font-style: bold;
+	font-family: $fontMain;
+
+}
+
+.titulo_section_pages{
+	font-family: $fontSec;
+	font-size: 2.5rem;
+
+}
+
+.titulo_section--m{
+	font-size: 1.5rem;
+	font-family: $fontMain;
+}
+
+.titulos_forms{
+	font-size: 2rem;
+	color: $petrol;
+	font-family: $fontMain;
+
+}
+
+.parrafos{
+	font-size: 2rem;
+	line-height: 35px;
+	font-family: $fontMain;
+}
+
+.paginas p.parrafos{
+	margin: 20px;
+}

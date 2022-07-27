@@ -1,0 +1,67 @@
+
+//CARROUSEL
+
+.carousel{
+  display: flex;
+  width: 80%;
+  align-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+
+//ANIMACION DE SECTION INVOLUCRARSE
+
+.img_inv1{
+  animation: slide-in1 4000ms;
+  cursor: pointer;
+}
+
+.img_inv2{
+  animation: slide-in2 3500ms;
+  cursor: pointer;
+
+  }
+
+.img_inv3{
+  animation: slide-in3 2000ms;
+  cursor: pointer;
+
+  }
+
+@keyframes slide-in1 {
+    from {
+      transform: translateX(-300%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+  }
+
+ @keyframes slide-in2 {
+    from {
+      transform: translateX(-200%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+  }
+
+  @keyframes slide-in3{
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+  }
+
+  //ANIMACION DE BACKGROUND PARA SECCIONES EN PAGINAS "CAUSAS"
+  //"NUESTROS PROGRAMAS", "NOVEDADES Y EVENTOS" Y "SOBRE NOSOTROS"
+
+  //Se aplica en div_contenedor_causas
+
+  @keyframes causas {
+  from {background-color: $whiteT;}
+  to {background-color: $lightYellow;}
+}

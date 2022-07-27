@@ -1,0 +1,40 @@
+// CONTENEDORES DE PAGINA INDEX.HTML
+
+.div_contenedor{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+
+.div_involucrarse_contenedor{
+	display: flex;
+	flex-direction: row;
+	position: relative;
+	width: 100%;
+	justify-content: space-evenly;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	background-color: #f5BD47 ;
+	div{
+		width: 100%;
+		display: flex;
+		align-content: center;
+		flex-wrap: wrap;
+		font-size: 1.2rem;
+		font-family: 'Merriweather', serif;
+		padding: 45px;
+		justify-content: center;
+
+	}
+}
+
+//.div_involucrarse{
+//	width: 100%;
+//	display: flex;
+//	align-content: center;
+//	flex-wrap: wrap;
+//	font-size: 1.2rem;
+//	font-family: 'Merriweather', serif;
+//	padding: 45px;
+//	justify-content: center;	

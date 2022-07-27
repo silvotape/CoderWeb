@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Lora&display=swap");
+.nav_principal--text {
+  font-family: "Lato", sans-serif;
+  font-size: 2.2rem;
+  font-weight: 800;
+}
+
+.nav_login_donate--text {
+  color: rgb(130, 18, 44);
+  font-size: 1.7rem;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+}
+
+.titulo_principal--l {
+  font-size: 3.5rem;
+  font-style: bold;
+  margin: 15px;
+  font-family: "Lato", sans-serif;
+}
+
+.titulo_intermedio--m {
+  font-size: 2rem;
+  font-style: bold;
+  font-family: "Lato", sans-serif;
+}
+
+.titulo_section_pages {
+  font-family: "Merriweather", serif;
+  font-size: 2.5rem;
+}
+
+.titulo_section--m {
+  font-size: 1.5rem;
+  font-family: "Lato", sans-serif;
+}
+
+.titulos_forms {
+  font-size: 2rem;
+  color: #147989;
+  font-family: "Lato", sans-serif;
+}
+
+.parrafos {
+  font-size: 2rem;
+  line-height: 35px;
+  font-family: "Lato", sans-serif;
+}
+
+.paginas p.parrafos {
+  margin: 20px;
+}
+
+.logo-iconosize {
+  width: 250px;
+}
+
+.icono_programas {
+  width: 25%;
+  margin-bottom: 10px;
+}
+
+.imagen_principal {
+  display: flex;
+  margin: 20px;
+  width: 100%;
+}
+
+.btn_involucrarse {
+  background-color: turquoise;
+  border-radius: 5px;
+  font-family: "Merriweather", serif;
+  font-size: 1rem;
+  margin-top: 20px;
+}
+
+.div_contenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.div_involucrarse_contenedor {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 100%;
+  justify-content: space-evenly;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: #f5BD47;
+}
+.div_involucrarse_contenedor div {
+  width: 100%;
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  font-size: 1.2rem;
+  font-family: "Merriweather", serif;
+  padding: 45px;
+  justify-content: center;
+}
+
+.carousel {
+  display: flex;
+  width: 80%;
+  align-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.img_inv1 {
+  animation: slide-in1 4000ms;
+  cursor: pointer;
+}
+
+.img_inv2 {
+  animation: slide-in2 3500ms;
+  cursor: pointer;
+}
+
+.img_inv3 {
+  animation: slide-in3 2000ms;
+  cursor: pointer;
+}
+
+@keyframes slide-in1 {
+  from {
+    transform: translateX(-300%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+@keyframes slide-in2 {
+  from {
+    transform: translateX(-200%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+@keyframes slide-in3 {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+@keyframes causas {
+  from {
+    background-color: #fff;
+  }
+  to {
+    background-color: #ffffe0;
+  }
+}
+/* ----------- Media query 768px --------------*/
+@media only screen and (max-width: 768px) {
+  .div_involucrarse_contenedor {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  iframe {
+    width: 50%;
+  }
+}
+/* ----------- Media query 1366px --------------*/
+@media only screen and (max-width: 1366px) {
+  .div_involucrarse_contenedor {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .div_involucrarse {
+    width: 65%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #f5BD47;
+    font-size: 1.2rem;
+    font-family: "Merriweather", serif;
+    padding: 45px;
+    justify-content: center;
+  }
+}
+.pie {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.pie_icon--sm {
+  width: 30px;
+}
+
+.pie_icon--m {
+  width: 42px;
+}
+
+.pie_background {
+  background-color: #147989;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: auto;
+}
+ul li {
+  display: inline-block;
+  margin-right: 40px;
+}
+ul li a {
+  text-decoration: none;
+}
+
+header {
+  background: linear-gradient(60deg, #f6ac23, rgb(255, 249, 212));
+}
+
+body {
+  background-color: #fff;
+}
+
+figcaption {
+  color: #147989;
+}
+
+/*# sourceMappingURL=main.css.map */
