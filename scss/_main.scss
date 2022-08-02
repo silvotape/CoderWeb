@@ -1,0 +1,208 @@
+// CONTENEDORES DE PAGINA INDEX.HTML
+
+.div_involucrarse_contenedor{
+	display: flex;
+	flex-direction: row;
+	position: relative;
+	width: 100%;
+	justify-content: space-evenly;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	background-color: #f5BD47 ;
+	div{
+		width: 100%;
+		display: flex;
+		align-content: center;
+		flex-wrap: wrap;
+		font-size: 1.2rem;
+		font-family: 'Merriweather', serif;
+		padding: 45px;
+		justify-content: center;
+
+	}
+}
+
+// CLASE BASE
+
+.div_icono_h1{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+// DIV CONTENEDOR PARA PAGINAS CAUSAS, PROGRAMAS, NOVEDADES Y EVENTOS
+// Y SOBRE NOSOTROS
+
+
+.div_contenedor{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-top: 10px;
+	padding: 30px;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #fff;
+	animation: bg 5s infinite;
+}	
+
+
+// GRID PAGINA NOSOTROS
+
+.contenedor{
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(5, auto);
+	grid-template-areas: 
+	"header header header"
+	"section section section"
+	"main main aside"
+	"main main aside"
+	"footer footer footer";
+}
+
+.contenedor > div,
+.contenedor .aside{
+	background-color: lightgoldenrodyellow;
+	border-radius: 4px;
+	padding: 20px;
+}
+
+.contenedor .header{
+	grid-area: header;
+	
+}
+
+.contenedor .section{
+	grid-area: section;
+	
+}
+
+.contenedor .main{
+	grid-area: main;
+	display: flex;
+	flex-wrap: wrap;
+		
+}
+
+.div_50{
+	width: 50%;
+	padding: 5px;
+}
+
+.contenedor .aside{
+	grid-area: aside;
+}
+
+.contenedor .footer{
+	grid-area: footer;
+}
+
+// ----------- CLASE BASE ------------------
+
+.iconos{
+	margin-bottom: 10px;
+}
+
+// ----------- EXTEND ------------------
+
+.icono_causas{
+	@extend .iconos; 
+	width: 30%;
+}
+
+.icono_programas{
+	@extend .iconos; 
+	width: 25%;
+	}
+
+.icono_nosotros{
+	@extend .iconos; 
+	width: 50%;	
+}
+
+
+.imagen_principal{
+  display: flex;
+  margin: 20px;
+  width: 100%
+}
+
+.btn_involucrarse{
+	background-color: $turq;
+	border-radius: 5px;
+	font-family: $fontSec;
+	font-size: 1rem;
+	margin-top: 20px;
+	}
+
+
+
+/*--------- Propiedades de Formularios ---------*/
+
+
+.div_forms{
+	height: 50vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 100px;
+	margin-bottom: 100px;
+
+}    
+  
+form{
+	width:400px;
+	padding:16px;
+	border-radius:10px;
+	margin:auto;
+	background-color:$softOrange;
+}
+
+form label{
+	width:150px;
+	font-weight:bold;
+	display:inline-block;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"]{
+	width:180px;
+	padding:3px 10px;
+	border:1px solid $softGrey;
+	border-radius:3px;
+	background-color:$softGrey;
+	margin:8px 0;
+	display:inline-block;
+}
+
+form input[type="submit"]{
+	width:100%;
+	padding:8px 16px;
+	margin-top:32px;
+	border:1px solid $brown;
+	border-radius:5px;
+	display:block;
+	color:$whiteT;
+	background-color:$brown;
+} 
+
+form input[type="submit"]:hover{
+	cursor:pointer;
+}
+
+textarea{
+	width:100%;
+	height:100px;
+	border:1px solid $softGrey;
+	border-radius:3px;
+	background-color:$softGrey;			
+	margin:8px 0;
+	/*resize: vertical | horizontal | none | both*/
+	resize:none;
+	display:block;
+}
+

@@ -5,60 +5,89 @@
 $fontMain: 'Lato', sans-serif;
 $fontSec: 'Merriweather', serif;
 
-.nav_principal--text{
+
+// ------------------ CLASE BASE ---------------------
+
+.nav_principal{
 	font-family: $fontMain;
-	font-size: 2.2rem;
-	font-weight: 800;
+	font-size: 2rem;
+	font-weight: 200;
+}
+
+.nav_principal--text{
+	@extend .nav_principal;
+	color:$softYellow;
+	&:hover{
+		font-weight:500;
+		background-color:$softOrange;
+	}
 
 }
 
-.nav_login_donate--text{
-	color: $bordeau;
-	font-size: 1.7rem;
-	font-family: $fontMain;
-	font-weight: bold;
+.mizonta{
+@extend .nav_principal;
+color:map-get($map:$colores,$key:'dos');
+background-color:$softOrange;
+	&:hover{
+ 		font-weight:500;
+ 		background-color:$medOrange;
+ 		color:map-get($map:$colores,$key:'dos');
+ 		}
+ }
 
+// -------- MIXINS --------------------
+
+@mixin texto-fontMain ($fontSize, $fontStyle){
+	font-size: $fontSize;
+	font-style: $fontStyle;
+	font-family: $fontMain;
 }
 
 .titulo_principal--l{
-	font-size: 3.5rem;
-	font-style: bold;
+	@include texto-fontMain (3.5rem, bold);
 	margin: 15px;
-	font-family: $fontMain;
-
 }
 
 .titulo_intermedio--m{
-	font-size: 2rem;
-	font-style: bold;
-	font-family: $fontMain;
-
-}
-
-.titulo_section_pages{
-	font-family: $fontSec;
-	font-size: 2.5rem;
+	@include texto-fontMain (2rem, normal);
 
 }
 
 .titulo_section--m{
-	font-size: 1.5rem;
-	font-family: $fontMain;
-}
-
-.titulos_forms{
-	font-size: 2rem;
-	color: $petrol;
-	font-family: $fontMain;
-
+	@include texto-fontMain (1.5rem, normal);
 }
 
 .parrafos{
-	font-size: 2rem;
+	@include texto-fontMain (2rem, normal);
 	line-height: 35px;
-	font-family: $fontMain;
 }
+
+.parrafos_nosotros{
+	@include texto-fontMain (1.3rem, normal);
+	line-height: 25px;
+}
+
+.titulos_forms{
+	@include texto-fontMain (2rem, normal);
+	color: $brown;
+}
+
+@mixin texto-fontSec ($fontSize, $fontStyle){
+	font-size: $fontSize;
+	font-style: $fontStyle;
+	font-family: $fontSec;
+	}
+
+.titulo_section_pages{
+	@include texto-fontSec (2.5rem, normal);
+}
+
+
 
 .paginas p.parrafos{
 	margin: 20px;
+}
+
+figcaption{
+	color: $brown;
 }

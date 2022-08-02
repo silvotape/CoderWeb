@@ -10,7 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 
                 <!-- CSS MIO -->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
      <!------------ DEFINO EL GRID NOVEDADES Y EVENTOS ---------->
@@ -19,28 +19,11 @@
         <!------------------ AREA HEADER ------------------>
 <header>
 
-         <!-- NAVBAR 1 DE BOOTSTRAP -->
+<a href="../index.html"><img class="logo-iconosize" src="../images/logo.jpg" alt="Logo de Zonta Internacional Region Sudamerica"></a>
 
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="../index.html"><img class="logo-iconosize" src="../images/logo.jpg" alt="Logo de Zonta Internacional Region Sudamerica"></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-5">
-        <li class="nav-item">
-          <a class="nav-link nav_login_donate--text" href="../pages/ingresar.html">Ingresar</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link nav_login_donate--text" href ="../pages/donaciones.html">¿Queres donar?<img src="../images/dollar.png" width="20px"></a>
-      </ul>
-    </div>
-</nav>
+                <!-- NAVBAR2 DE BOOTSTRAP -->
 
-        <!-- NAVBAR2 DE BOOTSTRAP -->
-
-<nav class="navbar navbar-expand-lg">
+<nav class="navbar navbar-expand-lg bg-bordeau">
   <div class="container-fluid">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -63,20 +46,33 @@
           <a class=" nav-link nav_principal--text" href="../pages/sobre_nosotros.html">Sobre Nosotros</a>
         </li>  
         <li class="nav-item">
-          <a class="nav-link nav_principal--text" href="../pages/contacto.html">Contacto</a>
+          <a class="nav-link nav_principal--text" href="../pages/contacto.html">Contacto</a> 
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle nav_principal--text" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+           Mi Zonta</a>
+            <ul class="dropdown-menu bg-bordeau mizonta">
+             <li>
+                <a class="dropdown-item nav_principal--text" href="../pages/ingresar.html">Ingresar</a>
+             </li>
+             <li>
+                <a class="dropdown-item nav_principal--text" href="../pages/donaciones.html">¿Queres donar?</a>
+             </li>
+          </ul>
+        </li>
      </ul>
     </div>
   </div>
 </nav> 
+
 </header> 
 
 <main>
 <section class="paginas">
-  <div class="div_contenedor_programas justify-center">
+  <div class="div_contenedor">
             
         <!-- Div para icono y h1 -->
     <div class="div_icono_h1 img_novs">
-      <img class="icono_novedades" src="../images/novedades_icono.png" alt="Novedades y Eventos icono diario">
+      <img class="icono" src="../images/novedades_icono.png" alt="Novedades y Eventos icono diario">
       <p class="titulo_section--m">Zonta Sudamerica</p>
       <h1 class="titulo_section_pages">Novedades y Eventos</h1>
     </div>
@@ -92,7 +88,7 @@
 
 <!--------- BOOTSTRAP GRID 3 COLUMN --------->
 
-<div class="container text-center">
+<div class="container text-center parrafos_nosotros">
   <div class="row">
     <div class="col">
       <figure>
@@ -121,7 +117,7 @@
   </div>
 </div>
 
-<div class="container text-center">
+<div class="container text-center parrafos_nosotros">
   <div class="row">
     <div class="col">
       <figure>

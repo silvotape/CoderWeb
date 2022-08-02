@@ -119,14 +119,6 @@ nav ul li{
 
 }
 
-.div_contenedor{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	width: 100%;
-}
-
-
 
 .logo-iconosize{
 	width: 250px;
@@ -140,14 +132,6 @@ nav ul li{
   margin: auto;
 }
 
-/*--------NO!! LO PASE A SCCS-------*/
-.align-items{
-	align-items: center;
-}
-
-.overflow{
-	overflow: hidden;
-}
 
 /*YA LO PASE A SCCS*/
 .div_involucrarse_contenedor{
@@ -354,12 +338,7 @@ div figure p{
 	align-content: center;
 
 }
-	
-.div_imagen_nosotros{
-	display: flex;
-	justify-content: center;
 
-}
 
 .div_icono_h1{
 	display: flex;
@@ -372,15 +351,11 @@ div figure p{
 	margin-bottom: 10px;
 }
 
-.main_div{
-	display: flex;	
-}
 
 .parrafos_nosotros{
 	font-size: 1.3rem;
 	line-height: 25px;
 	font-family: 'Lato', sans-serif;
-
 }
 
 

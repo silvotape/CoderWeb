@@ -10,32 +10,17 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 
                 <!-- CSS MIO -->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
-	<header>
-          <!-- NAVBAR 1 DE BOOTSTRAP -->
 
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="../index.html"><img class="logo-iconosize" src="../images/logo.jpg" alt="Logo de Zonta Internacional Region Sudamerica"></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-5">
-        <li class="nav-item">
-          <a class="nav-link nav_login_donate--text" href="../pages/ingresar.html">Ingresar</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link nav_login_donate--text" href ="../pages/donaciones.html">¿Queres donar?<img src="../images/dollar.png" width="20px"></a>
-      </ul>
-    </div>
-</nav>
+<header>
+         
+<a href="../index.html"><img class="logo-iconosize" src="../images/logo.jpg" alt="Logo de Zonta Internacional Region Sudamerica"></a>
 
-        <!-- NAVBAR2 DE BOOTSTRAP -->
+                <!-- NAVBAR2 DE BOOTSTRAP -->
 
-<nav class="navbar navbar-expand-lg">
+<nav class="navbar navbar-expand-lg bg-bordeau">
   <div class="container-fluid">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -58,7 +43,19 @@
           <a class=" nav-link nav_principal--text" href="../pages/sobre_nosotros.html">Sobre Nosotros</a>
         </li>  
         <li class="nav-item">
-          <a class="nav-link nav_principal--text" href="../pages/contacto.html">Contacto</a>
+          <a class="nav-link nav_principal--text" href="../pages/contacto.html">Contacto</a> 
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle nav_principal--text" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+           Mi Zonta</a>
+            <ul class="dropdown-menu bg-bordeau mizonta">
+             <li>
+                <a class="dropdown-item nav_principal--text" href="../pages/ingresar.html">Ingresar</a>
+             </li>
+             <li>
+                <a class="dropdown-item nav_principal--text" href="../pages/donaciones.html">¿Queres donar?</a>
+             </li>
+          </ul>
+        </li>
      </ul>
     </div>
   </div>
@@ -71,10 +68,10 @@
 
 	       <!------- Section para Nuestros Programas principal --------->
 <section class="paginas">
-        <div class="div_contenedor_programas">
+        <div class="div_contenedor">
             
             <!-- Div para icono y h1 -->
-            <div class="div_icono_h1">
+            <div class="div_icono_h1 img_novs">
             <img class="icono_programas" src="../images/programas_icono.png" alt="Nuestros Programas icono estrella">
             <p class="titulo_section--m">Zonta Sudamerica</p>
             <h1 class="titulo_section_pages">Nuestros Programas</h1>
@@ -92,12 +89,12 @@
 <!------------- BOOTSTRAP COLUMN GRID 2 --------->
 
 
-<div class="container text-center div_grid_causas">
+<div class="container text-center div_grid_causas parrafos_nosotros">
   <div class="row row-cols-2">
     <div class="col">
       <figure>
             <img class="w-100" src="../images/programas_servicio.jpg" alt="Nuestros Programas servicio internacional"> 
-            <figcaption class="titulo_intermedio--m"><strong>Servicio Internacional
+            <figcaption class="titulo_intermedio--m">Servicio Internacional
             </figcaption>
             <p>Nos apasiona brindar oportunidades que cambien la vida para empoderar a mujeres y niñas y mejorar su salud, brindar mejores oportunidades económicas y prevenir la violencia de género.</p>
         </figure>
@@ -107,7 +104,7 @@
     <div class="col">
       <figure>
         <img class="w-100" src="../images/programas_educacion.png" alt="Nuestros Programas Eduacion"> 
-        <figcaption class="titulo_intermedio--m"><strong>Eduacion
+        <figcaption class="titulo_intermedio--m">Eduacion
         </figcaption>
         <p>Estamos dedicados a lograr la igualdad de género en la educación y apoyamos becas, becas y premios para mujeres y niñas.</p>
         </figure>
@@ -115,13 +112,13 @@
   </div>
 </div>
 
-    <div class="container text-center div_grid_causas">
+    <div class="container text-center div_grid_causas parrafos_nosotros">
       <div class="row row-cols-2 w-100">
        <div class="col">
         <figure>
         <img class="w-100" src="../images/programas_accion.png" alt="Nuestros Programas Mision en Accion">
         <figcaption class="titulo_intermedio--m">
-        <strong>Misión en Acción
+        Misión en Acción
         </figcaption>
         <p>Somos una comunidad de más de 1100 clubes Zonta en 63 países que llevamos a cabo nuestra misión Zonta y trabajamos para mejorar la vida de mujeres y niñas en sus comunidades locales. </p>
         </figure>
@@ -131,7 +128,7 @@
     <div class="col">
       <figure>
         <img class="w-100" src="../images/programas_no_violencia.png" alt="Nuestros Programas NO a la violencia" > 
-        <figcaption class="titulo_intermedio--m"><strong>Zonta dice NO a la violencia contra las mujeres
+        <figcaption class="titulo_intermedio--m">Zonta dice NO a la violencia contra las mujeres
         </figcaption>
         <p>Estamos comprometidos a lograr un mundo libre de violencia contra las mujeres y las niñas.</p>
       </figure>

@@ -1,47 +1,11 @@
 // IMPORTS
 @import "_vars";
+@import "_global";
 @import "_fonts";
-@import "_images";
-@import "_contenedores";
+@import "_main";
 @import "_animaciones";
 @import "_mediaquerys";
 @import "_footer";
 
 
-html{
-	font-size: 62.5%;
-	}
-
-*{
-	padding: 0;
-	margin: 0;
-}
-
-ul {
-	list-style: none;
-	margin: auto;
-	li{ 
-		display: inline-block;
-		margin-right: 40px;
-		a{
-		text-decoration: none;
-		}
-
-	}
-
-}
-
-
-header{
-	background: $bgHeader;
-
-}
-
-body{
-	background-color: $whiteT;
-}
-
-figcaption{
-	color: $petrol ;
-}
 
