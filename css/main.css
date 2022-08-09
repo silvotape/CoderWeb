@@ -1,12 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Lora&display=swap");
-.bgHeader {
-  background-color: linear-gradient(60deg, #f6ac23, rgb(255, 249, 212));
+.iconos, .icono_nosotros, .icono_programas, .icono_causas {
+  margin-bottom: 10px;
 }
 
-.bg-bordeau {
-  background-color: rgb(130, 18, 44);
+.nav_principal, .mizonta, .nav_principal--text {
+  font-family: "Lato", sans-serif;
+  font-size: 2rem;
+  font-weight: 200;
 }
 
 html {
@@ -33,22 +35,80 @@ nav ul li a {
   text-decoration: none;
 }
 
-header {
-  background: #fff;
-}
-
 body {
   background-color: #fff;
 }
 
-.logo-iconosize {
-  width: 250px;
+figcaption {
+  color: #02735E;
 }
 
-.nav_principal, .mizonta, .nav_principal--text {
-  font-family: "Lato", sans-serif;
-  font-size: 2rem;
-  font-weight: 200;
+.paginas p.parrafos {
+  margin: 20px;
+}
+
+/*--------- Propiedades de Formularios ---------*/
+form {
+  width: 400px;
+  padding: 16px;
+  border-radius: 10px;
+  margin: auto;
+  background-color: #f5BD47;
+}
+
+form label {
+  width: 150px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+form input[type=text],
+form input[type=email],
+form input[type=password] {
+  width: 180px;
+  padding: 3px 10px;
+  border: 1px solid #f6f6f6;
+  border-radius: 3px;
+  background-color: #f6f6f6;
+  margin: 8px 0;
+  display: inline-block;
+}
+
+form input[type=submit] {
+  width: 100%;
+  padding: 8px 16px;
+  margin-top: 32px;
+  border: 1px solid #bf874e;
+  border-radius: 5px;
+  display: block;
+  color: #fff;
+  background-color: #bf874e;
+}
+
+form input[type=submit]:hover {
+  cursor: pointer;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  border: 1px solid #f6f6f6;
+  border-radius: 3px;
+  background-color: #f6f6f6;
+  margin: 8px 0;
+  /*resize: vertical | horizontal | none | both*/
+  resize: none;
+  display: block;
+}
+
+.div_forms {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 .nav_principal--text {
@@ -65,7 +125,7 @@ body {
 }
 .mizonta:hover {
   font-weight: 500;
-  background-color: #f6ac23;
+  background-color: #rgba 235, 183, 71, 1;
   color: rgb(130, 18, 44);
 }
 
@@ -120,7 +180,21 @@ body {
 }
 
 figcaption {
-  color: #bf874e;
+  color: #02735E;
+}
+
+.div_header {
+  background-image: url(../images/header-lg.jpg);
+  opacity: 0.9;
+  width: 100%;
+}
+
+.logo-iconosize {
+  width: 250px;
+}
+
+.bg-softBordeau {
+  background-color: #A64149;
 }
 
 .div_involucrarse_contenedor {
@@ -140,7 +214,6 @@ figcaption {
   flex-wrap: wrap;
   font-size: 1.2rem;
   font-family: "Merriweather", serif;
-  padding: 45px;
   justify-content: center;
 }
 
@@ -148,6 +221,20 @@ figcaption {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.grilla {
+  background: rgb(167, 195, 34);
+  background: linear-gradient(0deg, rgba(167, 195, 34, 0.3197654062) 69%, rgba(241, 253, 45, 0.2609418768) 88%);
+  margin-bottom: 5px;
+  margin-left: 10px;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.flex-dir {
+  display: flex;
+  flex-direction: nowrap;
 }
 
 .div_contenedor {
@@ -172,7 +259,7 @@ figcaption {
 
 .contenedor > div,
 .contenedor .aside {
-  background-color: lightgoldenrodyellow;
+  background-color: #ffffe0;
   border-radius: 4px;
   padding: 20px;
 }
@@ -204,8 +291,28 @@ figcaption {
   grid-area: footer;
 }
 
-.iconos, .icono_nosotros, .icono_programas, .icono_causas {
-  margin-bottom: 10px;
+.imagen_principal {
+  display: flex;
+  margin: 20px;
+  width: 100%;
+}
+
+.btn_involucrarse {
+  background-color: #147989;
+  border-radius: 5px;
+  font-family: "Merriweather", serif;
+  font-size: 1.5rem;
+  margin-top: 20px;
+  color: #fff;
+}
+.btn_involucrarse:hover {
+  background-color: #fff;
+  color: #147989;
+  border: none;
+}
+
+.bg-carousel {
+  background-color: #147989;
 }
 
 .icono_causas {
@@ -220,90 +327,15 @@ figcaption {
   width: 50%;
 }
 
-.imagen_principal {
-  display: flex;
-  margin: 20px;
-  width: 100%;
-}
-
-.btn_involucrarse {
-  background-color: turquoise;
-  border-radius: 5px;
-  font-family: "Merriweather", serif;
-  font-size: 1rem;
-  margin-top: 20px;
-}
-
-/*--------- Propiedades de Formularios ---------*/
-.div_forms {
-  height: 50vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 100px;
-  margin-bottom: 100px;
-}
-
-form {
-  width: 400px;
-  padding: 16px;
-  border-radius: 10px;
-  margin: auto;
-  background-color: #f5BD47;
-}
-
-form label {
-  width: 150px;
-  font-weight: bold;
-  display: inline-block;
-}
-
-form input[type=text],
-form input[type=email],
-form input[type=password] {
-  width: 180px;
-  padding: 3px 10px;
-  border: 1px solid #f6f6f6;
-  border-radius: 3px;
-  background-color: #f6f6f6;
-  margin: 8px 0;
-  display: inline-block;
-}
-
-form input[type=submit] {
-  width: 100%;
-  padding: 8px 16px;
-  margin-top: 32px;
-  border: 1px solid #bf874e;
-  border-radius: 5px;
-  display: block;
-  color: #fff;
-  background-color: #bf874e;
-}
-
-form input[type=submit]:hover {
-  cursor: pointer;
-}
-
-textarea {
-  width: 100%;
-  height: 100px;
-  border: 1px solid #f6f6f6;
-  border-radius: 3px;
-  background-color: #f6f6f6;
-  margin: 8px 0;
-  /*resize: vertical | horizontal | none | both*/
-  resize: none;
-  display: block;
-}
-
 .carousel {
   display: flex;
   width: 80%;
   align-content: center;
   align-items: center;
-  margin: auto;
+  margin: 50px auto;
+  border-radius: 50px;
+  box-shadow: 10px 10px lightblue;
+  blur: 5px;
 }
 
 .img_inv1 {
@@ -400,23 +432,12 @@ textarea {
   .div_involucrarse_contenedor {
     display: flex;
     flex-wrap: wrap;
-  }
-  iframe {
-    width: 50%;
-  }
-}
-/* ----------- Media query 1366px --------------*/
-@media only screen and (max-width: 1366px) {
-  .div_involucrarse_contenedor {
-    display: flex;
-    align-items: center;
     align-content: center;
     justify-content: center;
     flex-direction: row;
-    width: 100%;
+    width: 80%;
     justify-content: space-evenly;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin: auto;
   }
   .div_involucrarse {
     width: 65%;
@@ -431,6 +452,35 @@ textarea {
     font-family: "Merriweather", serif;
     padding: 45px;
     justify-content: center;
+  }
+  iframe {
+    width: 50%;
+  }
+  .carousel {
+    width: 90%;
+    margin: 50px auto;
+  }
+  .contenedor {
+    grid-template-columns: 2fr;
+    grid-template-rows: repeat(7, auto);
+    grid-template-areas: "header header" "section section" "main main" "main main" "main main" "aside aside" "footer footer";
+  }
+  .div_50 {
+    width: 50%;
+  }
+}
+/* ----------- Media query 576px --------------*/
+@media only screen and (max-width: 576px) {
+  .contenedor {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, auto);
+    grid-template-areas: "header" "section" "main" "main" "main" "aside" "footer";
+  }
+  .div_50 {
+    width: 100%;
+  }
+  header {
+    text-align: center;
   }
 }
 .pie {
@@ -449,10 +499,6 @@ textarea {
 
 .pie_icon--m {
   width: 42px;
-}
-
-.pie_background {
-  background-color: rgb(130, 18, 44);
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -2,17 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Lora&display=swap');
 
-$fontMain: 'Lato', sans-serif;
-$fontSec: 'Merriweather', serif;
-
-
-// ------------------ CLASE BASE ---------------------
-
-.nav_principal{
-	font-family: $fontMain;
-	font-size: 2rem;
-	font-weight: 200;
-}
+// Extend definido en _mixins
 
 .nav_principal--text{
 	@extend .nav_principal;
@@ -23,6 +13,8 @@ $fontSec: 'Merriweather', serif;
 	}
 
 }
+
+// Map-get definido en _mixins
 
 .mizonta{
 @extend .nav_principal;
@@ -35,13 +27,8 @@ background-color:$softOrange;
  		}
  }
 
-// -------- MIXINS --------------------
+// Includes definido en _mixins
 
-@mixin texto-fontMain ($fontSize, $fontStyle){
-	font-size: $fontSize;
-	font-style: $fontStyle;
-	font-family: $fontMain;
-}
 
 .titulo_principal--l{
 	@include texto-fontMain (3.5rem, bold);
@@ -72,22 +59,13 @@ background-color:$softOrange;
 	color: $brown;
 }
 
-@mixin texto-fontSec ($fontSize, $fontStyle){
-	font-size: $fontSize;
-	font-style: $fontStyle;
-	font-family: $fontSec;
-	}
-
 .titulo_section_pages{
 	@include texto-fontSec (2.5rem, normal);
 }
-
-
-
 .paginas p.parrafos{
 	margin: 20px;
 }
 
 figcaption{
-	color: $brown;
+	color: $green;
 }

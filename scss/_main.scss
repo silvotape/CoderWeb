@@ -5,6 +5,8 @@
 	flex-direction: row;
 	position: relative;
 	width: 100%;
+	//height: 70vh;
+	//align-items:center;
 	justify-content: space-evenly;
 	margin-top: 50px;
 	margin-bottom: 50px;
@@ -15,19 +17,36 @@
 		align-content: center;
 		flex-wrap: wrap;
 		font-size: 1.2rem;
-		font-family: 'Merriweather', serif;
-		padding: 45px;
+		font-family: $fontSec;
+	//	padding: 45px;
 		justify-content: center;
 
 	}
 }
 
-// CLASE BASE
-
 .div_icono_h1{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+}
+
+
+// DIVS PARA PAGINAS CAUSAS DE GRILLA BS
+
+.grilla{
+	background:map-get($map:$colores,$key:'cuatro');
+	background:map-get($map:$colores,$key:'cinco');
+	//background: rgb(167,195,34);
+	//background: linear-gradient(0deg, rgba(167,195,34,0.31976540616246496) 69%, rgba(241,253,45,0.26094187675070024) 88%);
+	margin-bottom: 5px;
+	margin-left:10px;
+	border-radius:8px;
+	padding:10px;
+}
+
+.flex-dir{
+	display:flex;
+	flex-direction: nowrap;
 }
 
 // DIV CONTENEDOR PARA PAGINAS CAUSAS, PROGRAMAS, NOVEDADES Y EVENTOS
@@ -42,7 +61,7 @@
 	padding: 30px;
 	justify-content: space-around;
 	align-items: center;
-	background-color: #fff;
+	background-color: $whiteT;
 	animation: bg 5s infinite;
 }	
 
@@ -64,7 +83,7 @@
 
 .contenedor > div,
 .contenedor .aside{
-	background-color: lightgoldenrodyellow;
+	background-color: $lightYellow;
 	border-radius: 4px;
 	padding: 20px;
 }
@@ -99,13 +118,34 @@
 	grid-area: footer;
 }
 
-// ----------- CLASE BASE ------------------
-
-.iconos{
-	margin-bottom: 10px;
+.imagen_principal{
+  display: flex;
+  margin: 20px;
+  width: 100%
 }
 
-// ----------- EXTEND ------------------
+.btn_involucrarse{
+	background-color: $petrol;
+	border-radius: 5px;
+	font-family: $fontSec;
+	font-size: 1.5rem;
+	margin-top: 20px;
+	color:$whiteT;
+	&:hover{
+ 		background-color: $whiteT;
+	  color:$petrol;
+	  border:none;
+ 		}
+	}
+
+
+.bg-carousel{
+	background-color: $petrol;
+}
+
+
+
+// ----------- EXTEND PARA ICONOS ------------------
 
 .icono_causas{
 	@extend .iconos; 
@@ -120,89 +160,5 @@
 .icono_nosotros{
 	@extend .iconos; 
 	width: 50%;	
-}
-
-
-.imagen_principal{
-  display: flex;
-  margin: 20px;
-  width: 100%
-}
-
-.btn_involucrarse{
-	background-color: $turq;
-	border-radius: 5px;
-	font-family: $fontSec;
-	font-size: 1rem;
-	margin-top: 20px;
-	}
-
-
-
-/*--------- Propiedades de Formularios ---------*/
-
-
-.div_forms{
-	height: 50vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	margin-top: 100px;
-	margin-bottom: 100px;
-
-}    
-  
-form{
-	width:400px;
-	padding:16px;
-	border-radius:10px;
-	margin:auto;
-	background-color:$softOrange;
-}
-
-form label{
-	width:150px;
-	font-weight:bold;
-	display:inline-block;
-}
-
-form input[type="text"],
-form input[type="email"],
-form input[type="password"]{
-	width:180px;
-	padding:3px 10px;
-	border:1px solid $softGrey;
-	border-radius:3px;
-	background-color:$softGrey;
-	margin:8px 0;
-	display:inline-block;
-}
-
-form input[type="submit"]{
-	width:100%;
-	padding:8px 16px;
-	margin-top:32px;
-	border:1px solid $brown;
-	border-radius:5px;
-	display:block;
-	color:$whiteT;
-	background-color:$brown;
-} 
-
-form input[type="submit"]:hover{
-	cursor:pointer;
-}
-
-textarea{
-	width:100%;
-	height:100px;
-	border:1px solid $softGrey;
-	border-radius:3px;
-	background-color:$softGrey;			
-	margin:8px 0;
-	/*resize: vertical | horizontal | none | both*/
-	resize:none;
-	display:block;
 }
 

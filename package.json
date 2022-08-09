@@ -1,7 +1,7 @@
 {
   "name": "git-repositorio",
   "version": "1.0.0",
-  "description": "",
+  "description": "Se diseña sitio web para la organizacion Zonta Internacional Region Sudamerica",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,7 +12,7 @@
     "type": "git",
     "url": "git+https://github.com/silvotape/CoderWeb.git"
   },
-  "author": "",
+  "author": "Silvia Perelli",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/silvotape/CoderWeb/issues"
