@@ -34,12 +34,14 @@
 // DIVS PARA PAGINAS CAUSAS DE GRILLA BS
 
 .grilla{
+	width: 100%;
 	background:map-get($map:$colores,$key:'cuatro');
 	background:map-get($map:$colores,$key:'cinco');
 	//background: rgb(167,195,34);
 	//background: linear-gradient(0deg, rgba(167,195,34,0.31976540616246496) 69%, rgba(241,253,45,0.26094187675070024) 88%);
-	margin-bottom: 5px;
-	margin-left:10px;
+	//margin-bottom: 5px;
+	//margin-left:10px;
+	margin: 5px auto;
 	border-radius:8px;
 	padding:10px;
 }
